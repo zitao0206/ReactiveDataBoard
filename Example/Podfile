@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XYReactDataBoard_Example' do
+  pod 'XYReactDataBoard', :path => '../'
+
+  target 'XYReactDataBoard_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

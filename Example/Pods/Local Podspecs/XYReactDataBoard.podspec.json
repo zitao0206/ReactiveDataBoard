@@ -1,0 +1,22 @@
+{
+  "name": "XYReactDataBoard",
+  "version": "0.1.0",
+  "summary": "A short description of XYReactDataBoard.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lizitao000/XYReactDataBoard",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lizitao000": "zitao.li@quvideo.com"
+  },
+  "source": {
+    "git": "https://github.com/lizitao000/XYReactDataBoard.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XYReactDataBoard/Classes/**/*"
+}
