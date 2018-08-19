@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5420DC70A2574FB18FEA3E93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5420DC70A2574FB18FEA3E93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XYReactDataBoard_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYReactDataBoard_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,7 +57,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		650B3599AE7415B21C6AB032 /* XYReactDataBoard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XYReactDataBoard.podspec; path = ../XYReactDataBoard.podspec; sourceTree = "<group>"; };
+		650B3599AE7415B21C6AB032 /* XYReactDataBoard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XYReactDataBoard.podspec; path = ../XYReactDataBoard.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6D0E6467612BF102E582DED2 /* Pods-XYReactDataBoard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReactDataBoard_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYReactDataBoard_Tests/Pods-XYReactDataBoard_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75E8EA01248FF60AE3AC4200 /* Pods-XYReactDataBoard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReactDataBoard_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYReactDataBoard_Example/Pods-XYReactDataBoard_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		9EE030C1439B410E792EE282 /* Pods_XYReactDataBoard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYReactDataBoard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1ACA6BA71C4C4E2D6F320AB /* Pods-XYReactDataBoard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReactDataBoard_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYReactDataBoard_Example/Pods-XYReactDataBoard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E676F6DAE6A03D48FBF8B54D /* Pods-XYReactDataBoard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReactDataBoard_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYReactDataBoard_Tests/Pods-XYReactDataBoard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F9C152E2926B8A2CA48BC78E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F9C152E2926B8A2CA48BC78E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
