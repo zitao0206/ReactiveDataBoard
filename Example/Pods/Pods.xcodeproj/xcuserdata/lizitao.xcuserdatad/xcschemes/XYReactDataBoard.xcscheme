@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7264606B3F18FBD23E155E2F49DF40F3'
-               BlueprintName = 'XYReactDataBoard'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'XYReactDataBoard.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D9B3FE5B3A9CE92041C0310EEDD4494"
+               BlueprintName = "XYReactDataBoard"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "XYReactDataBoard.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
