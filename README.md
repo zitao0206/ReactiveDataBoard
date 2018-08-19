@@ -29,3 +29,7 @@ leon, 634376133@qq.com
 ## License
 
 XYReactDataBoard is available under the MIT license. See the LICENSE file for more info.
+
+## How to use
+https://blog.csdn.net/lizitao/article/details/81841171 or
+https://github.com/Leon0206/XYReactDataBoard/wiki
