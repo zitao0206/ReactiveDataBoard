@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+ReactiveObjC, 3.1.0
+
 ## Installation
 
 XYReactDataBoard is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +24,7 @@ pod 'XYReactDataBoard'
 
 ## Author
 
-lizitao000, zitao.li@quvideo.com
+leon, 634376133@qq.com
 
 ## License
 
