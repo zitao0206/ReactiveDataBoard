@@ -24,6 +24,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D888CACC213BE2C4007E4499 /* XYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D888CACB213BE2C4007E4499 /* XYTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A39BA9FB410D5DD58D37331 /* Pods_XYReactDataBoard_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYReactDataBoard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE030C1439B410E792EE282 /* Pods_XYReactDataBoard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYReactDataBoard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D888CACA213BE2C4007E4499 /* XYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYTestViewController.h; sourceTree = "<group>"; };
+		D888CACB213BE2C4007E4499 /* XYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTestViewController.m; sourceTree = "<group>"; };
 		E1ACA6BA71C4C4E2D6F320AB /* Pods-XYReactDataBoard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReactDataBoard_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYReactDataBoard_Example/Pods-XYReactDataBoard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E676F6DAE6A03D48FBF8B54D /* Pods-XYReactDataBoard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReactDataBoard_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYReactDataBoard_Tests/Pods-XYReactDataBoard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9C152E2926B8A2CA48BC78E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				6003F59C195388D20070C39A /* XYAppDelegate.h */,
 				6003F59D195388D20070C39A /* XYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				D888CACA213BE2C4007E4499 /* XYTestViewController.h */,
+				D888CACB213BE2C4007E4499 /* XYTestViewController.m */,
 				6003F5A5195388D20070C39A /* XYViewController.h */,
 				6003F5A6195388D20070C39A /* XYViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -358,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* XYAppDelegate.m in Sources */,
+				D888CACC213BE2C4007E4499 /* XYTestViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* XYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

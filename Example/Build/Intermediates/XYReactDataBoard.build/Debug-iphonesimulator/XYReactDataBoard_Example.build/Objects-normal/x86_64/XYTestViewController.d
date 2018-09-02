@@ -1,9 +1,8 @@
 dependencies: \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/XYReactDataBoard/XYReactDataBoard-Prefix.pch \
-  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/XYReactDataBoard/XYViewController.m \
-  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/XYReactDataBoard/XYViewController.h \
+  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/XYReactDataBoard/XYTestViewController.m \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/XYReactDataBoard/XYTestViewController.h \
-  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/XYReactDataBoard/XYReactDataBoard.framework/Headers/XYReactWhiteBoard.h \
+  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/XYReactDataBoard/XYReactDataBoard.framework/Headers/XYReactBlackBoard.h \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Modules/module.modulemap \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Headers/UISwitch+RACSignalSupport.h \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Headers/UISlider+RACSignalSupport.h \
@@ -96,4 +95,5 @@ dependencies: \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Headers/NSData+RACSupport.h \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Headers/NSArray+RACSequenceAdditions.h \
   /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Headers/MKAnnotationView+RACSignalSupport.h \
-  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Headers/ReactiveObjC-umbrella.h
+  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/ReactiveObjC/ReactiveObjC.framework/Headers/ReactiveObjC-umbrella.h \
+  /Users/lizitao/Desktop/MDProjects/XYReactDataBoard/Example/Build/Products/Debug-iphonesimulator/XYReactDataBoard/XYReactDataBoard.framework/Headers/XYReactWhiteBoard.h

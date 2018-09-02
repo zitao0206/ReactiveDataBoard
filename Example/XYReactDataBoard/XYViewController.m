@@ -7,6 +7,8 @@
 //
 
 #import "XYViewController.h"
+#import "XYTestViewController.h"
+#import "XYReactWhiteBoard.h"
 
 @interface XYViewController ()
 
@@ -17,13 +19,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIButton *helloBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 50)];
+    helloBtn.backgroundColor = [UIColor redColor];
+    [helloBtn setTitle:@"测试入口" forState:UIControlStateNormal];
+    [helloBtn addTarget:self action:@selector(jumpTo) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:helloBtn];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[XYReactWhiteBoard shareBoard] setValue:@"hello, whiteBoard" forKey:@"xy_whiteBoard"];
+    });
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[XYReactWhiteBoard shareBoard] setValue:@"hello, whiteBoard_keyPath" forKey:@"xy_whiteBoard_keyPath"];
+    });
+    
 }
 
-- (void)didReceiveMemoryWarning
+- (void)jumpTo
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    XYTestViewController *testVC = [XYTestViewController new];
+    [self.navigationController pushViewController:testVC animated:YES];
 }
 
 @end
