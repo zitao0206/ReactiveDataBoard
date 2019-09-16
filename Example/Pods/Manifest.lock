@@ -1,23 +1,16 @@
 PODS:
-  - ReactiveObjC (3.1.0)
-  - XYReactDataBoard (1.0.0):
-    - ReactiveObjC (= 3.1.0)
+  - MDReactDataBoard (0.1.0)
 
 DEPENDENCIES:
-  - XYReactDataBoard (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - ReactiveObjC
+  - MDReactDataBoard (from `../`)
 
 EXTERNAL SOURCES:
-  XYReactDataBoard:
+  MDReactDataBoard:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
-  XYReactDataBoard: d477f0e25e23811efcee5643d5f5e8ab1fd5481f
+  MDReactDataBoard: 18a6bd809162ac7005cb6aadaad60d8dc37b6ac6
 
-PODFILE CHECKSUM: 9c1bc96e1c6dde1ff0d601457764f55aeb64a144
+PODFILE CHECKSUM: 646c98adc7cde83d002f840c33aa1848b56a8893
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.2

@@ -1,9 +1,9 @@
-# XYReactDataBoard
+# MDReactDataBoard
 
-[![CI Status](http://img.shields.io/travis/lizitao000/XYReactDataBoard.svg?style=flat)](https://travis-ci.org/lizitao000/XYReactDataBoard)
-[![Version](https://img.shields.io/cocoapods/v/XYReactDataBoard.svg?style=flat)](http://cocoapods.org/pods/XYReactDataBoard)
-[![License](https://img.shields.io/cocoapods/l/XYReactDataBoard.svg?style=flat)](http://cocoapods.org/pods/XYReactDataBoard)
-[![Platform](https://img.shields.io/cocoapods/p/XYReactDataBoard.svg?style=flat)](http://cocoapods.org/pods/XYReactDataBoard)
+[![CI Status](https://img.shields.io/travis/leon0206/MDReactDataBoard.svg?style=flat)](https://travis-ci.org/leon0206/MDReactDataBoard)
+[![Version](https://img.shields.io/cocoapods/v/MDReactDataBoard.svg?style=flat)](https://cocoapods.org/pods/MDReactDataBoard)
+[![License](https://img.shields.io/cocoapods/l/MDReactDataBoard.svg?style=flat)](https://cocoapods.org/pods/MDReactDataBoard)
+[![Platform](https://img.shields.io/cocoapods/p/MDReactDataBoard.svg?style=flat)](https://cocoapods.org/pods/MDReactDataBoard)
 
 ## Example
 
@@ -11,25 +11,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-ReactiveObjC, 3.1.0
-
 ## Installation
 
-XYReactDataBoard is available through [CocoaPods](http://cocoapods.org). To install
+MDReactDataBoard is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'XYReactDataBoard'
+pod 'MDReactDataBoard'
 ```
 
 ## Author
 
-leon, 634376133@qq.com
+leon0206, zitao.li@quvideo.com
 
 ## License
 
-XYReactDataBoard is available under the MIT license. See the LICENSE file for more info.
-
-## How to use
-https://blog.csdn.net/lizitao/article/details/81841171 or
-https://github.com/Leon0206/XYReactDataBoard/wiki
+MDReactDataBoard is available under the MIT license. See the LICENSE file for more info.

@@ -4,22 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-XYReactDataBoard_Example.xcscheme</key>
+		<key>MDReactDataBoard.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-XYReactDataBoard_Tests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveObjC.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>XYReactDataBoard.xcscheme</key>
+		<key>Pods-MDReactDataBoard_Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

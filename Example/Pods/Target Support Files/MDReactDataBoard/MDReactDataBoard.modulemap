@@ -1,0 +1,6 @@
+framework module MDReactDataBoard {
+  umbrella header "MDReactDataBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,9 +1,9 @@
 //
-//  XYReactDataBoardTests.m
-//  XYReactDataBoardTests
+//  MDReactDataBoardTests.m
+//  MDReactDataBoardTests
 //
-//  Created by lizitao000 on 01/19/2018.
-//  Copyright (c) 2018 lizitao000. All rights reserved.
+//  Created by leon0206 on 09/16/2019.
+//  Copyright (c) 2019 leon0206. All rights reserved.
 //
 
 @import XCTest;
