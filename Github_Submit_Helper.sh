@@ -38,6 +38,6 @@ git tag $latestTag
 git push -v origin refs/tags/$latestTag
 sleep 3
 echo "发布到Github："
-pod trunk push XYReactDataBoard.podspec --allow-warnings
+pod trunk push MDReactDataBoard.podspec --allow-warnings
 
 echo "--------End--------"
