@@ -5,16 +5,13 @@
 //  Created by lizitao on 2018/1/10.
 //
 
-#import "XYReactDataBoardSubject.h"
-#import "RACDisposable.h"
-#import "RACScheduler.h"
-#import "RACSubscriber.h"
+#import "MDReactDataBoardSubject.h"
 
-@interface XYReactDataBoardSubject ()
+@interface MDReactDataBoardSubject ()
 @property (nonatomic, strong) id <RACSubscriber> subscriber;
 @end
 
-@implementation XYReactDataBoardSubject
+@implementation MDReactDataBoardSubject
 
 - (RACDisposable *)subscribe:(id<RACSubscriber>)subscriber
 {

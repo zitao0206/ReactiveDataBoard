@@ -1,6 +1,6 @@
 //
-//  XYReactWhiteBoard.h
-//  XYReactDataBoard
+//  MDReactWhiteBoard.h
+//  MDReactWhiteBoard
 //
 //  Created by lizitao on 2018/1/10.
 //
@@ -10,7 +10,7 @@
 
 #define XY_KEYPATH(key) [NSString stringWithFormat:@"%@ %@",key, self]
 
-@interface XYReactWhiteBoard : NSObject
+@interface MDReactWhiteBoard : NSObject
 
 + (nonnull instancetype)shareBoard;
 /**

@@ -1,12 +1,12 @@
 //
-//  XYReactDataBoardSubject.h
-//  XYReactDataBoard
+//  MDReactDataBoardSubject.h
+//  MDReactDataBoard
 //
 //  Created by lizitao on 2018/1/10.
 //
 
-#import "RACSubject.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 
-@interface XYReactDataBoardSubject : RACSubject
+@interface MDReactDataBoardSubject : RACSubject
 
 @end

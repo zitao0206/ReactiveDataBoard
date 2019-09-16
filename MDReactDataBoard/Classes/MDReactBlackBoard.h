@@ -1,6 +1,6 @@
 //
-//  XYReactBlackBoard.h
-//  XYReactDataBoard
+//  MDReactBlackBoard.h
+//  MDReactBlackBoard
 //
 //  Created by lizitao on 2018/1/19.
 //
@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
-@interface XYReactBlackBoard : NSObject
+@interface MDReactBlackBoard : NSObject
 /**
  *  订阅制定key的变化通知，支持初始值获取；
  *

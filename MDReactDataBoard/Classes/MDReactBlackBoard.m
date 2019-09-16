@@ -1,18 +1,18 @@
 //
-//  XYReactBlackBoard.m
-//  XYReactDataBoard
+//  MDReactBlackBoard.m
+//  MDReactBlackBoard
 //
 //  Created by lizitao on 2018/1/19.
 //
 
-#import "XYReactBlackBoard.h"
-@interface XYReactBlackBoard ()
+#import "MDReactBlackBoard.h"
+@interface MDReactBlackBoard ()
 @property (nonatomic, strong) NSMutableDictionary *subjects;
 @property (nonatomic, strong) NSMutableDictionary *values;
 @property (nonatomic, strong) NSMutableDictionary <NSString*, NSNumber*>*flags;
 @end
 
-@implementation XYReactBlackBoard
+@implementation MDReactBlackBoard
 
 - (instancetype)init
 {

@@ -1,13 +1,13 @@
 //
-//  XYReactWhiteBoard.m
-//  XYReactDataBoard
+//  MDReactWhiteBoard.m
+//  MDReactWhiteBoard
 //
 //  Created by lizitao on 2018/1/10.
 //
 
-#import "XYReactWhiteBoard.h"
-#import "XYReactDataBoardSubject.h"
-@interface XYReactWhiteBoard ()
+#import "MDReactWhiteBoard.h"
+#import "MDReactDataBoardSubject.h"
+@interface MDReactWhiteBoard ()
 @property (nonatomic, strong) NSMutableDictionary *subjects;
 @property (nonatomic, strong) NSMutableDictionary *values;
 @property (nonatomic, strong) NSMapTable *mapTable;
@@ -17,9 +17,9 @@
 
 @end
 
-@implementation XYReactWhiteBoard
+@implementation MDReactWhiteBoard
 
-static XYReactWhiteBoard *whiteBoard;
+static MDReactWhiteBoard *whiteBoard;
 static dispatch_once_t onceToken;
 
 + (instancetype)shareBoard
@@ -108,8 +108,8 @@ static dispatch_once_t onceToken;
 {
     if (key.length <= 0) return [RACSignal empty];
     RACSubject *subject = [self subjectForKey:key];
-    if (subject == nil || ![subject isKindOfClass:[XYReactDataBoardSubject class]]) {
-        subject = [XYReactDataBoardSubject subject];
+    if (subject == nil || ![subject isKindOfClass:[MDReactDataBoardSubject class]]) {
+        subject = [MDReactDataBoardSubject subject];
         @synchronized (self) {
             [self.subjects setObject:subject forKey:key];
             [self.rac_deallocDisposable addDisposable:[RACDisposable disposableWithBlock:^{
@@ -125,8 +125,8 @@ static dispatch_once_t onceToken;
     [self handleKeyPath:keyPath];
     if (keyPath.length <= 0) return [RACSignal empty];
     RACSubject *subject = [self subjectForKey:keyPath];
-    if (subject == nil || ![subject isKindOfClass:[XYReactDataBoardSubject class]]) {
-        subject = [XYReactDataBoardSubject subject];
+    if (subject == nil || ![subject isKindOfClass:[MDReactDataBoardSubject class]]) {
+        subject = [MDReactDataBoardSubject subject];
         @synchronized (self) {
             [self.subjects setObject:subject forKey:keyPath];
             [self.rac_deallocDisposable addDisposable:[RACDisposable disposableWithBlock:^{
