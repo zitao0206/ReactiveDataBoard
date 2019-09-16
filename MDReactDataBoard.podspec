@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
     tag = `git describe --abbrev=0 --tags 2>/dev/null`.strip
     if $?.success? then tag else "0.0.1" end
   end
+  s.version          = smart_version
   s.summary          = 'A short description of MDReactDataBoard.'
 
 # This description is used to generate tags and improve search results.
