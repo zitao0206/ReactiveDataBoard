@@ -37,7 +37,7 @@ echo "自动升级tag为："$latestTag
 git tag $latestTag
 git push -v origin refs/tags/$latestTag
 sleep 3
-echo "发布到Github："
-pod trunk push MDReactDataBoard.podspec --allow-warnings
+echo "自动发版到MDSpecs"
+./publishHelper.sh
 
 echo "--------End--------"
