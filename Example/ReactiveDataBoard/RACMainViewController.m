@@ -9,7 +9,7 @@
 #import "RACMainViewController.h"
 #import "RACContentViewController.h"
 #import "RACViewController.h"
-#import "ReactiveBlackBoard.h"
+#import <ReactiveDataBoard/ReactiveDataBoard.h>
 
 @interface RACMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -28,7 +28,7 @@
     [self.view addSubview:self.tableView];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [[self.blackBoard addObserver:self forKey:@"rac_test_key"] subscribeNext:^(id  _Nullable x) {
+    [[RACWB addObserver:self forKey:@"rac_test_key"] subscribeNext:^(id  _Nullable x) {
         NSLog(@"RACMainViewController----->%@",x);
     }];
     

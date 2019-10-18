@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
-#define   RACWB                     [ReactiveWhiteBoard manager]
+#define   RACWB                     [ReactiveWhiteBoard whiteBoard]
 #define   RACWBObserver(key)        [[ReactiveWhiteBoard whiteBoard] addObserver:self forKey:key]
 #define   RACWBRemoveObserver(key)  [[ReactiveWhiteBoard whiteBoard] removeObserver:self forKey:key]
 

@@ -44,7 +44,7 @@
 //            
 //        });
 //    });
-    
+    [RACWB setValue:@"value" forKey:@"rac_test_key"];
     [[ReactiveWhiteBoard whiteBoard] addObserver:self forKey:@"key"];
     [[ReactiveWhiteBoard whiteBoard] removeObserver:self forKey:@"key"];
 }
