@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C39B49E287A3F60DA29B2DF /* libPods-ReactiveDataBoard_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B71BA0DB98150EAEDA0B95 /* libPods-ReactiveDataBoard_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,9 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		7F420B51DAB4C573AEC6189B /* Pods_ReactiveDataBoard_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF6CFB915F756142CBF2F2C /* Pods_ReactiveDataBoard_Example.framework */; };
-		842F790E4A61E848443EEC0D /* Pods_ReactiveDataBoard_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A506146A659583AE2566B096 /* Pods_ReactiveDataBoard_Tests.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D857336F235967FF00389431 /* RACContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D857336E235967FF00389431 /* RACContentViewController.m */; };
+		D85733722359906F00389431 /* RACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85733712359906F00389431 /* RACMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0143ED39C59DF8924D15B458 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0143ED39C59DF8924D15B458 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		298E565BF527E7128C6E6B31 /* Pods-ReactiveDataBoard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDataBoard_Example.release.xcconfig"; path = "Target Support Files/Pods-ReactiveDataBoard_Example/Pods-ReactiveDataBoard_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5C317267B03AD48E706AD420 /* Pods-ReactiveDataBoard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDataBoard_Tests.release.xcconfig"; path = "Target Support Files/Pods-ReactiveDataBoard_Tests/Pods-ReactiveDataBoard_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ReactiveDataBoard_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDataBoard_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,14 +58,16 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		685D7CA7FAEB5370BD62747F /* Pods-ReactiveDataBoard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDataBoard_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ReactiveDataBoard_Tests/Pods-ReactiveDataBoard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		68A4655AC666D914163288DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		68A4655AC666D914163288DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71B71BA0DB98150EAEDA0B95 /* libPods-ReactiveDataBoard_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDataBoard_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A506146A659583AE2566B096 /* Pods_ReactiveDataBoard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveDataBoard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69507E23087E5078930C8E9 /* Pods-ReactiveDataBoard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDataBoard_Example.debug.xcconfig"; path = "Target Support Files/Pods-ReactiveDataBoard_Example/Pods-ReactiveDataBoard_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A96AEB6AF10881797B99F1BB /* ReactiveDataBoard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ReactiveDataBoard.podspec; path = ../ReactiveDataBoard.podspec; sourceTree = "<group>"; };
-		AEF6CFB915F756142CBF2F2C /* Pods_ReactiveDataBoard_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveDataBoard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96AEB6AF10881797B99F1BB /* ReactiveDataBoard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReactiveDataBoard.podspec; path = ../ReactiveDataBoard.podspec; sourceTree = "<group>"; };
+		D857336D235967FF00389431 /* RACContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACContentViewController.h; sourceTree = "<group>"; };
+		D857336E235967FF00389431 /* RACContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACContentViewController.m; sourceTree = "<group>"; };
+		D85733702359906F00389431 /* RACMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACMainViewController.h; sourceTree = "<group>"; };
+		D85733712359906F00389431 /* RACMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +78,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				7F420B51DAB4C573AEC6189B /* Pods_ReactiveDataBoard_Example.framework in Frameworks */,
+				1C39B49E287A3F60DA29B2DF /* libPods-ReactiveDataBoard_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +89,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				842F790E4A61E848443EEC0D /* Pods_ReactiveDataBoard_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				AEF6CFB915F756142CBF2F2C /* Pods_ReactiveDataBoard_Example.framework */,
 				A506146A659583AE2566B096 /* Pods_ReactiveDataBoard_Tests.framework */,
+				71B71BA0DB98150EAEDA0B95 /* libPods-ReactiveDataBoard_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,9 +134,12 @@
 			children = (
 				6003F59C195388D20070C39A /* RACAppDelegate.h */,
 				6003F59D195388D20070C39A /* RACAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				D85733702359906F00389431 /* RACMainViewController.h */,
+				D85733712359906F00389431 /* RACMainViewController.m */,
 				6003F5A5195388D20070C39A /* RACViewController.h */,
 				6003F5A6195388D20070C39A /* RACViewController.m */,
+				D857336D235967FF00389431 /* RACContentViewController.h */,
+				D857336E235967FF00389431 /* RACContentViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -190,10 +193,7 @@
 			children = (
 				A69507E23087E5078930C8E9 /* Pods-ReactiveDataBoard_Example.debug.xcconfig */,
 				298E565BF527E7128C6E6B31 /* Pods-ReactiveDataBoard_Example.release.xcconfig */,
-				685D7CA7FAEB5370BD62747F /* Pods-ReactiveDataBoard_Tests.debug.xcconfig */,
-				5C317267B03AD48E706AD420 /* Pods-ReactiveDataBoard_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +208,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				99EB4B0A46A3B768E36CC149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +222,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ReactiveDataBoard_Tests" */;
 			buildPhases = (
-				2C5BC68DCC6EBBD0E0E25EC9 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -258,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,7 +276,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -295,46 +293,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C5BC68DCC6EBBD0E0E25EC9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactiveDataBoard_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99EB4B0A46A3B768E36CC149 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactiveDataBoard_Example/Pods-ReactiveDataBoard_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ReactiveDataBoard/ReactiveDataBoard.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveDataBoard.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactiveDataBoard_Example/Pods-ReactiveDataBoard_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F2DBB85D905B7EC09B4F1BFF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* RACAppDelegate.m in Sources */,
+				D85733722359906F00389431 /* RACMainViewController.m in Sources */,
+				D857336F235967FF00389431 /* RACContentViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* RACViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -523,7 +483,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 685D7CA7FAEB5370BD62747F /* Pods-ReactiveDataBoard_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -548,7 +507,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C317267B03AD48E706AD420 /* Pods-ReactiveDataBoard_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3936EDFD96519270613113A8DB40D4F0"
-               BuildableName = "ReactiveDataBoard.framework"
+               BuildableName = "libReactiveDataBoard.a"
                BlueprintName = "ReactiveDataBoard"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

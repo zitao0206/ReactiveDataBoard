@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-
+#import "ReactiveBlackBoard.h"
 @interface RACViewController : UIViewController
-
+@property (nonatomic, strong) ReactiveBlackBoard *blackBoard;
 @end
