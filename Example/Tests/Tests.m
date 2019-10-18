@@ -1,8 +1,8 @@
 //
-//  MDReactDataBoardTests.m
-//  MDReactDataBoardTests
+//  ReactiveDataBoardTests.m
+//  ReactiveDataBoardTests
 //
-//  Created by leon0206 on 09/16/2019.
+//  Created by leon0206 on 10/18/2019.
 //  Copyright (c) 2019 leon0206. All rights reserved.
 //
 

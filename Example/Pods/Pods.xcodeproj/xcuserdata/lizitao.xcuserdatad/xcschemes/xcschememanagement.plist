@@ -4,12 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MDReactDataBoard.xcscheme</key>
+		<key>Pods-ReactiveDataBoard_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MDReactDataBoard_Tests.xcscheme</key>
+		<key>Pods-ReactiveDataBoard_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveDataBoard.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

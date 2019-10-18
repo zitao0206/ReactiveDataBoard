@@ -1,6 +1,13 @@
 use_frameworks!
-target 'MDReactDataBoard_Tests' do
-  pod 'MDReactDataBoard', :path => '../'
-  
-  
+
+platform :ios, '8.0'
+
+target 'ReactiveDataBoard_Example' do
+  pod 'ReactiveDataBoard', :path => '../'
+
+  target 'ReactiveDataBoard_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end
