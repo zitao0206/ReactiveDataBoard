@@ -1,0 +1,6 @@
+framework module ReactiveDataBoard {
+  umbrella header "ReactiveDataBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}
