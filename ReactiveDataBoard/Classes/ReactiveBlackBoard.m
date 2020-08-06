@@ -29,99 +29,67 @@ typedef NS_ENUM(NSInteger, ReactiveBlackBoardFlagValue) {
 - (void)setValue:(id)value forKey:(NSString *)key
 {
     if (key.length <= 0) return;
-    @synchronized (self.values) {
-        [self.values setValue:value forKey:key];
-    }
-    if (ReactiveBlackBoardFlagOn == [[self.flags valueForKey:key] integerValue]) {
-        NSArray *arr = [self subjectsForKey:key];
-        [arr enumerateObjectsUsingBlock:^(RACSubject *subject, NSUInteger idx, BOOL * _Nonnull stop) {
-            [subject sendNext:value];
-        }];
-    }
-}
-
-- (id)valueForKey:(NSString *)key
-{
-    if (key.length <= 0) return nil;
-    return [self.values objectForKey:key];
-}
-
-- (RACSignal *)addObserver:(id)obj forKey:(NSString *)key
-{
-    if (key.length <= 0) return [RACSignal empty];
     @synchronized (self) {
-       [self.flags setValue:@(ReactiveBlackBoardFlagOn) forKey:key];
-       NSString *insideKey = [NSString stringWithFormat:@"%@_%@_%p",key,NSStringFromClass([obj class]),obj];
-       RACSubject *subject = [RACSubject subject];
-       [self.observers setValue:subject forKey:insideKey];
-       return subject;
+        
+        [self.values setValue:value forKey:key];
+        if (![self.flags valueForKey:key]) {
+            [self.flags setValue:@(1) forKey:key];
+        }
     }
-}
-
-- (NSArray *)subjectsForKey:(NSString *)key
-{
-     __block NSMutableArray *allSubjects = [NSMutableArray array];
-     @synchronized (allSubjects) {
-        [self.observers.allKeys enumerateObjectsUsingBlock:^(NSString *insideKey, NSUInteger idx, BOOL * _Nonnull stop) {
-            if ([insideKey hasPrefix:key]) {
-                [allSubjects addObject:[self.observers objectForKey:insideKey]];
-            }
-        }];
-        return allSubjects;
+    if ([[self.flags valueForKey:key] integerValue]) {
+         [[self subjectForKey:key] sendNext:value];
     }
 }
 
 - (void)pauseSignalForKey:(NSString *)key
 {
     if (key.length <= 0) return;
-    @synchronized (self.flags) {
-        [self.flags setValue:@(ReactiveBlackBoardFlagOff) forKey:key];
+    @synchronized (self) {
+        [self.flags setValue:@(0) forKey:key];
     }
 }
 
 - (void)restartSignalForKey:(NSString *)key
 {
     if (key.length <= 0) return;
-    @synchronized (self.flags) {
-        [self.flags setValue:@(ReactiveBlackBoardFlagOn) forKey:key];
+    @synchronized (self) {
+        [self.flags setValue:@(1) forKey:key];
     }
 }
 
-- (void)removeObserver:(id)obj forKey:(NSString *)key
+- (id)valueForKey:(NSString *)key
 {
-    if (key.length <= 0) return;
-    @synchronized (self.observers) {
-        NSString *insideKey = [NSString stringWithFormat:@"%@_%@_%p",key,NSStringFromClass([obj class]),obj];
-         RACSubject *subject = [self.observers objectForKey:insideKey];
-        if (subject) {
-            [self.observers removeObjectForKey:insideKey];
+    return [self.values objectForKey:key];
+}
+
+- (RACSignal *)signalForKey:(NSString *)key
+{
+    if (key.length <= 0) return [RACSignal empty];
+    RACSubject *subject = [self subjectForKey:key];
+    if (!subject) {
+        subject = [RACSubject subject];
+        @synchronized (self) {
+            [self.observers setValue:subject forKey:key];
+            [self.rac_deallocDisposable addDisposable:[RACDisposable disposableWithBlock:^{
+                [subject sendCompleted];
+            }]];
         }
     }
+    return subject;
 }
 
-- (void)removeAllObjObservers:(id)obj
+- (RACSubject *)subjectForKey:(NSString *)key
 {
-    if (!obj) return;
-    NSString *obj_str = [NSString stringWithFormat:@"%@_%p",NSStringFromClass([obj class]),obj];
-    if (obj_str.length <= 0) return;
-    @synchronized (self.observers) {
-        [self.observers.allKeys enumerateObjectsUsingBlock:^(NSString *insideKey, NSUInteger idx, BOOL * _Nonnull stop) {
-           if ([insideKey containsString:obj_str]) {
-                 [self.observers removeObjectForKey:insideKey];
-           }
-        }];
-    }
+    return [self.observers objectForKey:key];
 }
 
-- (void)removeAllKeyObservers:(NSString *)key
+- (void)removeValueForKey:(NSString *)key
 {
     if (key.length <= 0) return;
-    @synchronized (self.observers) {
-        [self.observers.allKeys enumerateObjectsUsingBlock:^(NSString *insideKey, NSUInteger idx, BOOL * _Nonnull stop) {
-           if ([insideKey hasPrefix:key]) {
-                 [self.observers removeObjectForKey:insideKey];
-           }
-        }];
+    @synchronized (self) {
+        [self.observers removeObjectForKey:key];
+        [self.values removeObjectForKey:key];
+        [self.flags removeObjectForKey:key];
     }
 }
 

@@ -73,4 +73,6 @@ dependencies: \
   /Users/lizitao/Desktop/MDProjects/ReactiveDataBoard/Example/Pods/Headers/Public/ReactiveObjC/UIRefreshControl+RACCommandSupport.h \
   /Users/lizitao/Desktop/MDProjects/ReactiveDataBoard/Example/Pods/Headers/Public/ReactiveObjC/UISlider+RACSignalSupport.h \
   /Users/lizitao/Desktop/MDProjects/ReactiveDataBoard/Example/Pods/Headers/Public/ReactiveObjC/UISwitch+RACSignalSupport.h \
-  /Users/lizitao/Desktop/MDProjects/ReactiveDataBoard/Example/ReactiveDataBoard/RACViewController.h
+  /Users/lizitao/Desktop/MDProjects/ReactiveDataBoard/Example/ReactiveDataBoard/RACViewController.h \
+  /Users/lizitao/Desktop/MDProjects/ReactiveDataBoard/Example/Pods/Headers/Public/ReactiveDataBoard/ReactiveDataBoard.h \
+  /Users/lizitao/Desktop/MDProjects/ReactiveDataBoard/Example/Pods/Headers/Public/ReactiveDataBoard/ReactiveWhiteBoard.h

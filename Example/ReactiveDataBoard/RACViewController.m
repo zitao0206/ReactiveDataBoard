@@ -29,21 +29,26 @@
            NSLog(@"RACViewController----->%@",x);
     }];
     
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//         [self.blackBoard setValue:nil forKey:@"rac_test_key"];
-//        
+    [[self.blackBoard valueForKey:@"rac_test_key"] subscribeNext:^(id  _Nullable x) {
+            NSLog(@"RACViewController----->%@",x);
+        
+    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+         [self.blackBoard setValue:@"pauseSignalForKey" forKey:@"rac_test_key"];
+        
 //         [self.blackBoard pauseSignalForKey:@"rac_test_key"];
-//        
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//           
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+           
 //            [self.blackBoard setValue:@"pauseSignalForKey" forKey:@"rac_test_key"];
-//            
+            
 //            [self.blackBoard restartSignalForKey:@"rac_test_key"];
-//            
+            
 //            [self.blackBoard setValue:@"restartSignalForKey" forKey:@"rac_test_key"];
-//            
-//        });
-//    });
+            
+        });
+    });
     [RACWB setValue:@"value" forKey:@"rac_test_key"];
     [[ReactiveWhiteBoard whiteBoard] addObserver:self forKey:@"key"];
     [[ReactiveWhiteBoard whiteBoard] removeObserver:self forKey:@"key"];

@@ -4,29 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
+		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		xnef/9xcSLYpAvgWMQH65VOmWpE=
-		</data>
-		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
-		<data>
-		aKlhb4Zk0Rdlgr+LZc6L+Ge2xXg=
+		mAJia5VDVdez3VTMit065qXJs8o=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
 		n2t8gsDpfE6XkhG31p7IQJRxTxU=
 		</data>
-		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib</key>
+		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		XH6US6D5pajGjRuxkmkXQNwkRX8=
-		</data>
-		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
-		<data>
-		1AIxycbPivJqSgk6wFIQC5N2AEI=
+		tcC+19GeVzQYFNmbL4ZIOAbdipY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6GipgrPMoOUwvnHbD8vTEr90lUE=
+		kDV2B8zLKrSl6FuFJHctVcwLrKs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -44,26 +36,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
+		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xnef/9xcSLYpAvgWMQH65VOmWpE=
+			mAJia5VDVdez3VTMit065qXJs8o=
 			</data>
 			<key>hash2</key>
 			<data>
-			KbsVuKGOJOPVY8SOYTDWGjHn3n3uB0o4NEdnCdPpXiQ=
-			</data>
-		</dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aKlhb4Zk0Rdlgr+LZc6L+Ge2xXg=
-			</data>
-			<key>hash2</key>
-			<data>
-			CjzkP/ivfKUseeUWm2PhKd51/sl1PW7P/k0DdXdi5FI=
+			PNIO8MTHy2+u9Th2wHGyv4h6M1V7BbsplLZy5PqY2iQ=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -77,26 +58,15 @@
 			HyVdXMU7Ux4/KalAao30mpWOK/lEPT4gvYN09wf31cg=
 			</data>
 		</dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib</key>
+		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XH6US6D5pajGjRuxkmkXQNwkRX8=
+			tcC+19GeVzQYFNmbL4ZIOAbdipY=
 			</data>
 			<key>hash2</key>
 			<data>
-			2O+el+k2jfjfiUr+oKdPr8sfeN+kXa3J1zRZ+eRF/U0=
-			</data>
-		</dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1AIxycbPivJqSgk6wFIQC5N2AEI=
-			</data>
-			<key>hash2</key>
-			<data>
-			pcMjfqRmsZqUSDpsNcOjyaR2td2S2YJtxNMqBMET7co=
+			NXX26VD2QFrgsQLR6e6FqrumIRcEVOJkQdgus4Qyc98=
 			</data>
 		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
