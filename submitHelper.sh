@@ -15,7 +15,7 @@ if [ $input ]; then
 else
     git commit -am "自动化代码提交"
 fi
-git push origin master
+git push -f origin master
 
 git fetch
 result=$(git tag --list)
@@ -89,7 +89,7 @@ echo 'nowDIR->' ${nowDIR}
 git status
 git add .
 git commit -m "[Add] ${podName} (${version})"
-git push
+git push -f
 
 cd ..
 rm -rf specs
