@@ -1,22 +1,27 @@
 {
   "name": "ReactiveDataBoard",
-  "version": "0.1.0",
+  "version": "4.0.7",
   "summary": "A short description of ReactiveDataBoard.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/leon0206/ReactiveDataBoard",
+  "homepage": "https://github.com/zitao0206/ReactiveDataBoard",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "leon0206": "zitao.li@quvideo.com"
+    "zitao0206": "634376133@qq.com"
   },
   "source": {
-    "git": "https://github.com/leon0206/ReactiveDataBoard.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/zitao0206/ReactiveDataBoard.git",
+    "tag": "4.0.7"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "ReactiveDataBoard/Classes/**/*"
+  "source_files": "ReactiveDataBoard/Classes/**/*",
+  "dependencies": {
+    "ReactiveObjC": [
+
+    ]
+  }
 }

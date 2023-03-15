@@ -2,7 +2,7 @@
 //  ReactiveWhiteBoard.m
 //  ReactiveDataBoard
 //
-//  Created by lizitao on 2018/1/19.
+//  Created by lizitao on 2019/9/27.
 //
 
 #import "ReactiveWhiteBoard.h"
@@ -10,10 +10,12 @@ typedef NS_ENUM(NSInteger, ReactiveBlackBoardFlagValue) {
     ReactiveBlackBoardFlagOn = 0,
     ReactiveBlackBoardFlagOff,
 };
+
 @interface ReactiveWhiteBoard ()
 @property (nonatomic, strong) NSMutableDictionary <NSString *, RACSubject *> *observers;
 @property (nonatomic, strong) NSMutableDictionary *values;
 @property (nonatomic, strong) NSMutableDictionary <NSString *, NSNumber *> *flags;
+
 @end
 
 @implementation ReactiveWhiteBoard

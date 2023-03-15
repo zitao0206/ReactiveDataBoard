@@ -2,7 +2,7 @@
 //  ReactiveWhiteBoard.h
 //  ReactiveDataBoard
 //
-//  Created by lizitao on 2018/1/19.
+//  Created by lizitao on 2019/9/27.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,60 +13,61 @@
 #define   RACWBRemoveObserver(key)  [[ReactiveWhiteBoard whiteBoard] removeObserver:self forKey:key]
 
 @interface ReactiveWhiteBoard : NSObject
+
 + (nonnull instancetype)whiteBoard;
 /**
-*  数据更新
+*  Data update
 *
-*  @param value 更新值，允许为空，为空则移除原值；建议使用宏声称键值字符串
-*  @param key   不允许为空
+*  @param value Update the value. It is allowed to be nil. If it is nil, the original value will be removed; It is recommended to use the macro to claim the key value string
+*  @param key   nil is not allowed
 */
 - (void)setValue:(id _Nullable )value forKey:(NSString *_Nullable)key;
 /**
-*  同步获取特定值；
+*  Get specific values synchronously.
 *
-*  @param key 建议使用宏声称键值字符串
+*  @param key, It is recommended to use the keypath macro to claim the key value string.
 *
 *  @return value
 */
 - (id _Nullable )valueForKey:(NSString *_Nonnull)key;
 
 /**
-*  订阅制定key的变化通知，支持初始值获取；
+*  Subscribe to the change notification of the specified key and support the initial value acquisition.
 *
-*  @param key 不允许空值， 建议使用宏声称键值字符串
+*  @param key nil is not allowed, It is recommended to use the keypath macro to claim the key value string.
 *
 *  @return signal
 */
 - (RACSignal *_Nullable)addObserver:(id _Nullable )obj forKey:(NSString *_Nullable)key;
 /**
-*  暂停信号的传递；
+*  Suspend signal transmission.
 *
-*  @param key 建议使用宏声称键值字符串
+*  @param key, It is recommended to use the keypath macro to claim the key value string.
 *
 */
 - (void)pauseSignalForKey:(NSString *_Nullable)key;
 /**
-*  重启信号的传递；
+*  Restart transmission of signal.
 *
-*  @param key 建议使用宏声称键值字符串
+*  @param key, It is recommended to use the keypath macro to claim the key value string.
 *
 */
 - (void)restartSignalForKey:(NSString *_Nonnull)key;
 
 /**
-*  删除指定obj下的Key值监听，释放内存（必须，三选一）
+*  Delete the key value listening under the specified obj and release the memory (required, choose one from three).
 *
-*  @param key 建议使用宏声称键值字符串
+*  @param key, It is recommended to use the keypath macro to claim the key value string.
 *
 */
 - (void)removeObserver:(id _Nullable )obj forKey:(NSString *_Nonnull)key;
 /**
-*  删除指定obj下的所有的监听，释放内存（必须，三选一）
+*  Delete all listeners under the specified obj and free memory (required, choose one from three).
 *
 */
 - (void)removeAllObjObservers:(id _Nullable )obj;
 /**
-*  删除指定Key值下的所有的监听，释放内存（必须，三选一）
+*  Delete all listeners under the specified Key value and free memory (required, choose one from three).
 *
 */
 - (void)removeAllKeyObservers:(NSString *_Nullable)key;

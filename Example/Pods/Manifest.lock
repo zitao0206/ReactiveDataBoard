@@ -1,5 +1,6 @@
 PODS:
-  - ReactiveDataBoard (0.1.0)
+  - ReactiveDataBoard (4.0.7):
+    - ReactiveObjC
   - ReactiveObjC (3.1.0)
 
 DEPENDENCIES:
@@ -7,7 +8,7 @@ DEPENDENCIES:
   - ReactiveObjC (= 3.1.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - ReactiveObjC
 
 EXTERNAL SOURCES:
@@ -15,9 +16,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ReactiveDataBoard: 8f51e65e8da81391ec382d7a2c6fb1f68ff57fb4
+  ReactiveDataBoard: fda4c83645c448815894daddf8275f4dd3e2a14e
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
 
 PODFILE CHECKSUM: c4513f62f792e46176874b87a7eca586dd32e2bd
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.11.3

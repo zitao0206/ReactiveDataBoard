@@ -25,14 +25,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/leon0206/ReactiveDataBoard'
+  s.homepage         = 'https://github.com/zitao0206/ReactiveDataBoard'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'leon0206' => 'zitao.li@quvideo.com' }
-  s.source           = { :git => 'https://github.com/leon0206/ReactiveDataBoard.git', :tag => s.version.to_s }
+  s.author           = { 'zitao0206' => '634376133@qq.com' }
+  s.source           = { :git => 'https://github.com/zitao0206/ReactiveDataBoard.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ReactiveDataBoard/Classes/**/*'
   

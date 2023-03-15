@@ -2,7 +2,7 @@
 //  ReactiveBlackBoard.h
 //  ReactiveDataBoard
 //
-//  Created by lizitao on 2018/1/19.
+//  Created by lizitao on 2019/9/27.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,46 +10,46 @@
 
 @interface ReactiveBlackBoard : NSObject
 /**
- *  订阅制定key的变化通知，支持初始值获取；
+ *  Subscribe to the change notification of the specified key and support the initial value acquisition.
  *
- *  @param key 不允许空值， 建议使用keypath宏声称键值字符串
+ *  @param key, nil value is not allowed. It is recommended to use the keypath macro to claim the key value string.
  *
  *  @return signal
  */
 - (nonnull RACSignal *)signalForKey:(nonnull NSString *)key;
 /**
- *  数据更新
+ *  Data update
  *
- *  @param value 更新值，允许为空，为空则移除原值；建议使用keypath宏声称键值字符串
- *  @param key   不允许为空
+ *  @param value, Update the value. It is allowed to be blank. If it is blank, the original value will be removed; It is recommended to use the keypath macro to claim the key value string.
+ *  @param key, nil value is not allowed.
  */
 - (void)setValue:(nullable id)value forKey:(nonnull NSString *)key;
 /**
- *  同步获取特定值；
+ *  Get specific values synchronously.
  *
- *  @param key 建议使用keypath宏声称键值字符串
+ *  @param key, It is recommended to use the keypath macro to claim the key value string.
  *
  *  @return value
  */
 - (nullable id)valueForKey:(nonnull NSString *)key;
 /**
- *  暂停信号的传递；
+ *  Suspend signal transmission.
  *
- *  @param key 建议使用keypath宏声称键值字符串
+ *  @param key, It is recommended to use the keypath macro to claim the key value string.
  *
  */
 - (void)pauseSignalForKey:(nonnull NSString *)key;
 /**
- *  重启信号的传递；
+ *  Restart transmission of signal.
  *
- *  @param key 建议使用keypath宏声称键值字符串
+ *  @param key, It is recommended to use the keypath macro to claim the key value string.
  *
  */
 - (void)restartSignalForKey:(nonnull NSString *)key;
 /**
- *  删除指定key和value，释放内存
+ *  Delete the specified key and value to free memory.
  *
- *  @param key 建议使用keypath宏声称键值字符串
+ *  @param key, It is recommended to use the keypath macro to claim the key value string.
  *
  */
 - (void)removeValueForKey:(nonnull NSString *)key;

@@ -1,6 +1,6 @@
 # ReactiveDataBoard
 
-[![CI Status](https://img.shields.io/travis/leon0206/ReactiveDataBoard.svg?style=flat)](https://travis-ci.org/leon0206/ReactiveDataBoard)
+[![CI Status](https://img.shields.io/travis/zitao0206/ReactiveDataBoard.svg?style=flat)](https://travis-ci.org/zitao0206/ReactiveDataBoard)
 [![Version](https://img.shields.io/cocoapods/v/ReactiveDataBoard.svg?style=flat)](https://cocoapods.org/pods/ReactiveDataBoard)
 [![License](https://img.shields.io/cocoapods/l/ReactiveDataBoard.svg?style=flat)](https://cocoapods.org/pods/ReactiveDataBoard)
 [![Platform](https://img.shields.io/cocoapods/p/ReactiveDataBoard.svg?style=flat)](https://cocoapods.org/pods/ReactiveDataBoard)
@@ -22,7 +22,7 @@ pod 'ReactiveDataBoard'
 
 ## Author
 
-leon0206, 634376133@qq.com
+zitao0206, 634376133@qq.com
 
 ## License
 

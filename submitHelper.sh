@@ -4,18 +4,19 @@ sleep 2
 
 echo "-------Begin-------"
 if [ ! $1 ]; then
-    read -r -p "Please input your Video commit message: " input
+    read -p "Please input your Video commit message: " input
 else
     input=$1
 fi
 
 git add -A
-if [ $input ]; then
-    git commit -am $input
+if [ -n "$input" ]; then
+    git commit -m "$input"
 else
-    git commit -am "自动化代码提交"
+    git commit -m "Script Submission"
 fi
-git push -f origin master
+
+git push -f origin main
 
 git fetch
 result=$(git tag --list)
@@ -44,11 +45,11 @@ for((k=0;k<100;k++)) do
     fi
 done;
 
-echo "自动升级tag为："$latestTag
+echo "Upgrade tag to："$latestTag
 git tag $latestTag
-git push -v origin refs/tags/$latestTag
+git push -v -f origin refs/tags/$latestTag
 sleep 3
-echo "自动发版到MDSpecs"
+echo "Publish to MDSpecs"
 #./publishHelper.sh
 
 #获取podspec文件名称
@@ -81,7 +82,7 @@ cp $packageDIR/${podspecFile} ${specsDir}${podName}/${version}
 echo '文件copy'
 destSource='"'${version}'"'
 sed -i ''  's/= smart_version/= '${destSource}'/g' ${specsDir}${podName}/${version}/${podspecFile}
-echo '替换版本号'
+echo 'Replace version number'
 
 nowDIR=`pwd`
 echo 'nowDIR->' ${nowDIR}
@@ -89,7 +90,7 @@ echo 'nowDIR->' ${nowDIR}
 git status
 git add .
 git commit -m "[Add] ${podName} (${version})"
-git push -f
+git push
 
 cd ..
 rm -rf specs

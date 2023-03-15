@@ -3,7 +3,7 @@
 //  ReactiveDataBoard_Example
 //
 //  Created by lizitao on 2019/10/18.
-//  Copyright © 2019 leon0206. All rights reserved.
+//  Copyright © 2019 zitao0206. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
