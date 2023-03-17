@@ -7,7 +7,7 @@
 
 ## Description
 
-It is a reactive programming framework built on top of ReactiveCocoa that can completely replace traditional data communication methods such as KVO and broadcast. It includes the instantiable ReactiveBlackBoard (KVO) and the singleton ReactiveWhiteBoard (broadcast), enabling real-time data communication between any objects and automated memory management. With minimal code, it can achieve your desired results. It has already been adopted by many teams.
+It is a reactive programming framework built on top of ReactiveCocoa that can completely replace traditional data communication methods such as KVO and broadcast. It includes the instantiable ReactiveBlackBoard (KVO) and the singleton ReactiveWhiteBoard (Notification), enabling real-time data communication between any objects and automated memory management. With minimal code, it can achieve your desired results. It has already been adopted by many teams.
 
 ## Example
 
