@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/ReactiveDataBoard.svg?style=flat)](https://cocoapods.org/pods/ReactiveDataBoard)
 [![Platform](https://img.shields.io/cocoapods/p/ReactiveDataBoard.svg?style=flat)](https://cocoapods.org/pods/ReactiveDataBoard)
 
+## Description
+
+It is a reactive programming framework built on top of ReactiveCocoa that can completely replace traditional data communication methods such as KVO and broadcast. It includes the instantiable ReactiveBlackBoard (KVO) and the singleton ReactiveWhiteBoard (broadcast), enabling real-time data communication between any objects and automated memory management. With minimal code, it can achieve your desired results. It has already been adopted by many teams.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
